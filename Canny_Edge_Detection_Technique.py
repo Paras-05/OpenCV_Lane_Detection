@@ -1,13 +1,13 @@
 import cv2
 import numpy as np
 
-Road_Image = cv2.imread('Road_Image.jpg')  # Reads image in the form of a numpy array.
+road_image = cv2.imread('Road_Image.jpg')  # Reads image in the form of a numpy array.
 
 # Canny edge detection:-
 
 '''Copying image array rather than assigning is the good practice
 because in this way it doesnt change original image'''
-road_image_copy = np.copy(Road_Image)
+road_image_copy = np.copy(road_image)
 
 '''Grayscale image only has one channel & each pixel with only one intensity value ranging from 0 to 255.
 Hence, Converting to greyscale ,image processing a single channel is faster than processing 3 channel image
