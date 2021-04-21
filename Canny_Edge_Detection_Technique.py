@@ -27,6 +27,6 @@ white pixels'''
 canny_image = cv2.Canny(filtered_image,30,90) # Threshold ratio as prescribed 1:3 or 1:2
 
 cv2.imshow("Image",canny_image)
-cv2.waitKey(0)  # Keep the image as long as we dont press any key from keyboard.
+cv2.waitKey(0)  # Keep the image as long as we don't press any key from keyboard.
 cv2.destroyAllWindows()
 cv2.imwrite('Canny_Image.png',canny_image)  # To save the Canny detected image.
